@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Service.Shared", "Korn.Service.Shared\Korn.Service.Shared.csproj", "{BE5FB24A-47F8-4707-87A3-847D161240D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE5FB24A-47F8-4707-87A3-847D161240D5}.Debug|x64.ActiveCfg = Debug|x64
+		{BE5FB24A-47F8-4707-87A3-847D161240D5}.Debug|x64.Build.0 = Debug|x64
+		{BE5FB24A-47F8-4707-87A3-847D161240D5}.Release|x64.ActiveCfg = Release|x64
+		{BE5FB24A-47F8-4707-87A3-847D161240D5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
