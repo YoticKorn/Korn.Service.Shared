@@ -16,9 +16,13 @@ namespace Korn.Service
 
         protected void OnPipeConnected()
         {
-            IsConnected = InputPipe.IsConnected && OutputPipe.IsConnected;
-            LastConnectTime = DateTime.Now;
-            WasConnected = true;
+            IsConnected = InputPipe != null && OutputPipe != null && InputPipe.IsConnected && OutputPipe.IsConnected;
+            
+            if (IsConnected)
+            {
+                LastConnectTime = DateTime.Now;
+                WasConnected = true;
+            }
         }
 
         protected void OnPipeDisconnected() => IsConnected = false;

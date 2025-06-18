@@ -9,7 +9,7 @@ namespace Korn.Service
     {
         public PacketList(Type[] types) : this(types.ToList()) { }
         public PacketList(string baseofName) : this(Assembly.GetCallingAssembly(), baseofName) { }
-        public PacketList(Assembly assembly, string baseofName) : this(assembly.GetTypes().Where(t => t.FullName.StartsWith(baseofName)).ToArray()) { }
+        public PacketList(Assembly assembly, string baseofName) : this(assembly.GetTypes().Where(t => t.FullName != null && t.FullName.StartsWith(baseofName)).ToArray()) { }
         public PacketList(List<Type> types) => Types = types;
 
         public List<Type> Types;

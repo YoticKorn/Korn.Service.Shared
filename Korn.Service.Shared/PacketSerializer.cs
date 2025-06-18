@@ -9,6 +9,8 @@ namespace Korn.Service
     {
         static JsonSerializer jsonSerializer = new JsonSerializer();
 
+#pragma warning disable CS0618 // Type or member is obsolete
+#pragma warning disable CS8601 // Possible null reference assignment.
         public static bool DeserializeClientPacket(ServerConfiguration configuration, byte[] bytes, out ClientPacket clientPacket, out uint packetID)
         {
             var result = Deserialize(configuration.GetClientPacketTypeByID, bytes, out var packet, out packetID);
@@ -69,5 +71,7 @@ namespace Korn.Service
                 }
             }
         }
+#pragma warning restore CS8601 // Possible null reference assignment.
+#pragma warning restore CS0618 // Type or member is obsolete
     }
 }
